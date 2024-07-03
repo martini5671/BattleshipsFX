@@ -1,0 +1,30 @@
+#rectangle_sea {
+    -fx-fill: #0077ff; /* Ocean blue color */
+    -fx-stroke: black;
+    -fx-stroke-width: 1;
+}
+#rectangle_ship {
+    -fx-fill: black;
+    -fx-stroke: grey;
+    -fx-stroke-width: 1;
+}
+#rectangle_ship_hit {
+    -fx-fill: red;
+    -fx-stroke: black;
+    -fx-stroke-width: 1;
+}
+#rectangle_ship_hit2 {
+    -fx-fill: red;
+    -fx-stroke: black;
+    -fx-stroke-width: 1;
+}
+#rectangle_miss {
+    -fx-fill: gray;
+    -fx-stroke: black;
+    -fx-stroke-width: 1;
+}
+#anchor_pane {
+-fx-background-color: linear-gradient(to bottom, #FFA07A, #87CEEB, #FFB6C1)
+}
+
+

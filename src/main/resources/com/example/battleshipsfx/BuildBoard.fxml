@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="538.0" prefWidth="836.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.battleshipsfx.BoardBuilderController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="538.0" layoutX="-2.0" layoutY="-1.0" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" width="845.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="0.6499999761581421" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <BorderPane fx:id="borderPane" prefHeight="538.0" prefWidth="836.0">
+         <left>
+            <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="538.0" prefWidth="270.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="scan_button" layoutX="48.0" layoutY="324.0" mnemonicParsing="false" onAction="#submitBoard" prefHeight="40.0" prefWidth="174.0" text="Scan" />
+                  <Button fx:id="reset_button" layoutX="48.0" layoutY="377.0" mnemonicParsing="false" onAction="#resetBoard" prefHeight="42.0" prefWidth="174.0" text="Reset" />
+                  <Label fx:id="steps_label" alignment="CENTER" layoutX="83.0" layoutY="65.0" prefHeight="27.0" prefWidth="104.0" text="Step 1/5" textAlignment="CENTER">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="instructions_label" layoutX="30.0" layoutY="128.0" prefHeight="60.0" prefWidth="210.0" text="Click on squares to draw 5 square long ship." textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="17.0" />
+                     </font></Label>
+                  <Button fx:id="back_to_menu_button" layoutX="48.0" layoutY="481.0" mnemonicParsing="false" onAction="#goBackToMMenu" prefHeight="36.0" prefWidth="174.0" text="Back to menu" />
+                  <Label fx:id="information_label" layoutX="44.0" layoutY="201.0" prefHeight="106.0" prefWidth="182.0" text="Ships can not be placed right next to each other. Once you are happy with your selection click on &quot;Scan&quot; button. You can also reset your selection by clicking &quot;Reset&quot;" wrapText="true" />
+               </children></AnchorPane>
+         </left>
+         <center>
+            <VBox alignment="CENTER" maxWidth="-Infinity" prefWidth="566.0">
+               <HBox fx:id="Hbox_Center" alignment="CENTER">
+                  <!-- your node/pane -->
+               </HBox>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

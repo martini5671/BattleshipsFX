@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchor_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="538.0" prefWidth="836.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.battleshipsfx.GameBoardController">
+    <children>
+      <GridPane alignment="CENTER" layoutX="15.0" layoutY="58.0" prefHeight="422.0" prefWidth="810.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <VBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="370.0">
+                     <children>
+                        <HBox fx:id="players_bord_hbox" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="370.0" />
+                     </children>
+                  </VBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                         <ImageView fitHeight="52.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true"> <image> <Image url="@img/cross.png" /> </image> </ImageView>
+                        <Label fx:id="hp_label_player" alignment="CENTER" minHeight="-Infinity" prefHeight="52.0" prefWidth="71.0" text="17" textAlignment="CENTER">
+                           <font>
+                              <Font size="33.0" />
+                           </font></Label>
+                        <ImageView fitHeight="41.0" fitWidth="43.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/miss.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="miss_label_player" alignment="CENTER" layoutX="62.0" layoutY="10.0" minHeight="-Infinity" prefHeight="52.0" prefWidth="71.0" text="0" textAlignment="CENTER">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="41.0" fitWidth="43.0" layoutX="218.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/boat.png" />
+                           </image>
+                           <effect>
+                              <ColorAdjust brightness="-1.0" contrast="-0.02" hue="0.05" saturation="-1.0" />
+                           </effect>
+                        </ImageView>
+                        <Label fx:id="ships_label_player" alignment="CENTER" layoutX="239.0" layoutY="10.0" minHeight="-Infinity" prefHeight="52.0" prefWidth="71.0" text="5" textAlignment="CENTER">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                     </children></HBox>
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+               <children>
+                  <VBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="370.0">
+                     <children>
+                        <HBox fx:id="enemy_board_hbox" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="370.0" />
+                     </children>
+                  </VBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="52.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/cross.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="hp_label_enemy" alignment="CENTER" minHeight="-Infinity" prefHeight="52.0" prefWidth="71.0" text="17" textAlignment="CENTER">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="41.0" fitWidth="43.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/miss.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="miss_label_enemy" alignment="CENTER" layoutX="62.0" layoutY="10.0" minHeight="-Infinity" prefHeight="52.0" prefWidth="71.0" text="0" textAlignment="CENTER">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="41.0" fitWidth="43.0" layoutX="218.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/boat.png" />
+                           </image>
+                           <effect>
+                              <ColorAdjust brightness="-1.0" contrast="-0.02" hue="0.05" saturation="-1.0" />
+                           </effect>
+                        </ImageView>
+                        <Label fx:id="ships_label_enemy" alignment="CENTER" layoutX="239.0" layoutY="10.0" minHeight="-Infinity" prefHeight="52.0" prefWidth="71.0" text="5" textAlignment="CENTER">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </GridPane>
+      <GridPane layoutX="14.0" layoutY="3.0" prefHeight="53.0" prefWidth="810.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="426.0" minWidth="10.0" prefWidth="406.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="409.0" minWidth="10.0" prefWidth="404.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="player_name_label" alignment="CENTER" prefHeight="47.0" prefWidth="406.0" text="&lt;NICKNAME'S&gt; Battlefield" textAlignment="CENTER">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="ai_name_label" alignment="CENTER" layoutX="10.0" layoutY="13.0" prefHeight="47.0" prefWidth="406.0" text="&lt;AI'S&gt; Battlefield" textAlignment="CENTER" GridPane.columnIndex="1">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+    <Button fx:id="take_fire_button" alignment="CENTER" layoutX="568.0" layoutY="488.0" mnemonicParsing="false" onAction="#takeShot" prefHeight="41.0" prefWidth="111.0" text="Take fire!" textAlignment="CENTER" />
+      <Button fx:id="menu_button" alignment="CENTER" layoutX="41.0" layoutY="488.0" mnemonicParsing="false" onAction="#goBackToMenu" prefHeight="41.0" prefWidth="111.0" text="Menu" textAlignment="CENTER" />
+      <Button fx:id="info_button" layoutX="160.0" layoutY="488.0" mnemonicParsing="false" onAction="#goToInfoSection" prefHeight="42.0" prefWidth="111.0" text="Info" />
+      <Label fx:id="timer_label" alignment="CENTER" layoutX="280.0" layoutY="488.0" prefHeight="42.0" prefWidth="111.0" style="-fx-border-color: black; -fx-border-radius: 2;" text="Timer" />
+    </children>
+</AnchorPane>

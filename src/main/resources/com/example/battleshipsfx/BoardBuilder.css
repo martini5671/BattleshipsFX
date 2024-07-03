@@ -1,0 +1,53 @@
+#buttonInGrid {
+    -fx-background-color: #0077ff; /* Ocean blue color */
+    -fx-border-color: #000000; /* Black border color */
+    -fx-border-radius: 0; /* Pointy corners */
+}
+#buttonInGrid:hover {
+    -fx-background-color: #0055cc; /* Darker blue hover color */
+}
+
+#buttonInGridClicked {
+    -fx-background-color: black;
+    -fx-border-color: white; /* Black border color */
+    -fx-border-radius: 0; /* Pointy corners */
+}
+
+.button:disabled {
+    /* other styles */
+    -fx-opacity: 1; /* or any other value to indicate disabled state */
+    -fx-background-color: grey;
+    -fx-border-color: black; /* Black border color */
+    -fx-border-radius: 0; /* Pointy corners */
+}
+
+.button {
+    -fx-background-color:
+        #000000,
+        linear-gradient(#a9d3ef, #528dc5),
+        linear-gradient(#7ab6e1, #4e75a3),
+        linear-gradient(#6ca9da, #4f407d);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 3,2,2,2;
+    -fx-padding: 8 20 8 20; /* Adjusted padding */
+    -fx-text-fill: white;
+    -fx-font-size: 13px; /* Smaller font size */
+}
+.button Text{
+    -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.8) , 0, 0.0 , 0 , 1);
+}
+.button:hover {
+    -fx-background-color:
+        #000000,
+        linear-gradient(#528dc5, #a9d3ef),
+        linear-gradient(#4e75a3, #7ab6e1),
+        linear-gradient(#4f407d, #6ca9da);
+}
+
+.button:pressed {
+    -fx-background-color:
+        #000000,
+        linear-gradient(#6ca9da, #4f407d),
+        linear-gradient(#4e75a3, #7ab6e1),
+        linear-gradient(#528dc5, #a9d3ef);
+}

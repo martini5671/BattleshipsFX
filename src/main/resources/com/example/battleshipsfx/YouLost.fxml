@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="538.0" prefWidth="836.0" style="-fx-background-color: red;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.battleshipsfx.YouLostController">
+   <children>
+      <Button fx:id="backToMenu_Button" layoutX="312.0" layoutY="445.0" mnemonicParsing="false" onAction="#goBackToMenu" prefHeight="48.0" prefWidth="212.0" text="Go back to menu" />
+      <Label layoutX="333.0" layoutY="78.0" text="You lost!">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

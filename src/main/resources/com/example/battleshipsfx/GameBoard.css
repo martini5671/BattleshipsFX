@@ -1,0 +1,144 @@
+#rectangle_sea {
+    -fx-fill: #0077ff; /* Ocean blue color */
+    -fx-stroke: black;
+    -fx-stroke-width: 1;
+}
+#rectangle_ship {
+    -fx-fill: black;
+    -fx-stroke: grey;
+    -fx-stroke-width: 1;
+}
+#rectangle_ship_hit {
+    -fx-fill: red;
+    -fx-stroke: black;
+    -fx-stroke-width: 1;
+}
+#rectangle_miss {
+    -fx-fill: gray;
+    -fx-stroke: black;
+    -fx-stroke-width: 1;
+}
+
+#button_default_enemy {
+    -fx-background-color: #0077ff; /* Ocean blue color */
+    -fx-border-color: #000000; /* Black border color */
+    -fx-border-radius: 0; /* Pointy corners */
+    -fx-border-width: 1;
+    -fx-border-style: solid;
+}
+#button_default_enemy:hover {
+    -fx-background-color: #0055cc; /* Darker blue hover color */
+}
+#button_clicked_enemy {
+    -fx-background-color: yellow;
+    -fx-border-color: white; /* Black border color */
+    -fx-border-radius: 0; /* Pointy corners */
+    -fx-border-width: 1;
+    -fx-border-style: solid;
+}
+
+ #button_disabled_enemy {
+     -fx-background-color: #cccccc;
+     -fx-border-color: #999999;
+     -fx-text-fill: #666666;
+     -fx-border-radius: 0;
+     -fx-border-width: 1;
+     -fx-border-style: solid;
+ }
+ #button_disabled_enemy:hover {
+     -fx-background-color: #cccccc;
+ }
+
+#button_enemy_miss {
+    -fx-background-color: grey;
+    -fx-border-width: 1px;
+    -fx-border-color: black;
+    -fx-border-style: solid;
+}
+#button_enemy_hit{
+    -fx-background-color: red; /* green color */
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
+}
+#anchor_pane {
+-fx-background-color: linear-gradient(to bottom, #FFA07A, #87CEEB)
+}
+#take_fire_button {
+    -fx-background-color: #ff6347; /* coral color */
+    -fx-text-fill: black;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+}
+
+#take_fire_button:hover {
+    -fx-background-color: #ff4500; /* orange color on hover */
+}
+
+#take_fire_button:pressed {
+    -fx-background-color: #d32f2f; /* darker red color when pressed */
+}
+
+#info_button {
+    -fx-background-color:
+        #000000,
+        linear-gradient(#a9d3ef, #528dc5),
+        linear-gradient(#7ab6e1, #4e75a3),
+        linear-gradient(#6ca9da, #4f407d);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 3,2,2,2;
+    -fx-padding: 8 20 8 20; /* Adjusted padding */
+    -fx-text-fill: white;
+    -fx-font-size: 13px; /* Smaller font size */
+}
+#info_button Text{
+    -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.8) , 0, 0.0 , 0 , 1);
+}
+#info_button:hover {
+    -fx-background-color:
+        #000000,
+        linear-gradient(#528dc5, #a9d3ef),
+        linear-gradient(#4e75a3, #7ab6e1),
+        linear-gradient(#4f407d, #6ca9da);
+}
+
+#info_button:pressed {
+    -fx-background-color:
+        #000000,
+        linear-gradient(#6ca9da, #4f407d),
+        linear-gradient(#4e75a3, #7ab6e1),
+        linear-gradient(#528dc5, #a9d3ef);
+}
+#menu_button {
+    -fx-background-color:
+        #000000,
+        linear-gradient(#a9d3ef, #528dc5),
+        linear-gradient(#7ab6e1, #4e75a3),
+        linear-gradient(#6ca9da, #4f407d);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 3,2,2,2;
+    -fx-padding: 8 20 8 20; /* Adjusted padding */
+    -fx-text-fill: white;
+    -fx-font-size: 13px; /* Smaller font size */
+}
+#menu_button Text{
+    -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.8) , 0, 0.0 , 0 , 1);
+}
+#menu_button:hover {
+    -fx-background-color:
+        #000000,
+        linear-gradient(#528dc5, #a9d3ef),
+        linear-gradient(#4e75a3, #7ab6e1),
+        linear-gradient(#4f407d, #6ca9da);
+}
+
+#menu_button:pressed {
+    -fx-background-color:
+        #000000,
+        linear-gradient(#6ca9da, #4f407d),
+        linear-gradient(#4e75a3, #7ab6e1),
+        linear-gradient(#528dc5, #a9d3ef);
+}
