@@ -2,9 +2,11 @@
 
 BattleshipsFX is my first major Java project. It is a classic battleships game with a GUI which was coded using Java and JavaFX framework. The game also utilizes MongoDB to store a player's score. 
 
+![grab-landing-page](https://github.com/martini5671/BattleshipsFX/blob/master/battleshipsFX_gif.gif)
+
 ## Installation
 1. Clone the repository into your IDE (preferably InteliJ).
-2. Install MongoDB locally. 
+2. Install MongoDB locally.
 
 
 ```java
