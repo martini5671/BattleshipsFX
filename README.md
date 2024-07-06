@@ -4,9 +4,14 @@ BattleshipsFX is my first major Java project. It is a classic battleships game w
 
 ![grab-landing-page](https://github.com/martini5671/BattleshipsFX/blob/master/battleshipsFX_gif.gif)
 
-## Installation
-1. Clone the repository into your IDE (preferably InteliJ).
-2. Install MongoDB locally.
+## Windows installation
+Simple installation:
+1. Download Java JDK 21
+2. Install Java JDK 21
+3. Adjust your system variables and add path to Java directory in Program Files.
+4. Download jar file from this link: https://1drv.ms/u/c/50d18e26bb6460b5/EfWBEQk_Um9Agi0YmI6eVTYBV6jxLU1FG9X9_w7l5DeI-Q?e=vwRR4w
+5. Open jar file using java.
+6. Install MongoDB for windows. 
 
 
 ```java
