@@ -5,7 +5,7 @@ BattleshipsFX is my first major Java project. It is a classic battleships game w
 ![grab-landing-page](https://github.com/martini5671/BattleshipsFX/blob/master/battleshipsFX_gif.gif)
 
 ## Windows installation
-Simple installation:
+**Simple installation with JAR file:**
 1. Download Java JDK 21
 2. Install Java JDK 21
 3. Adjust your system variables and add path to Java directory in Program Files.
